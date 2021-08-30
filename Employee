@@ -1,0 +1,25 @@
+class Employee {
+    String name;
+    int yoj;
+    String address;
+
+    void printData(String n,int y, String a){
+        name = n;
+        yoj = y;
+        address = a;
+        System.out.println("Name\t\tYear of joining\t\tAddress");
+        System.out.println(name+"\t\t\t"+yoj+"\t\t\t"+address);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        Employee e1 = new Employee();
+        Employee e2 = new Employee();
+        Employee e3 = new Employee();
+        e1.printData("Robert", 1994, "64C-WallStreet");
+        e2.printData("Sam", 2000, "68D-WallStreet");
+        e3.printData("John", 1999, "26B-WallStreet");
+
+    }
+}
